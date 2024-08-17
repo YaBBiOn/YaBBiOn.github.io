@@ -18,7 +18,6 @@ Welcome to my Blog :)
 | Data Reporting & Documentation | ![Markdown](https://img.shields.io/badge/Markdown-FBFBF9?style=flat-square&logo=Markdown&logoColor=3D382F) ![LaTeX](https://img.shields.io/badge/LaTeX-FBFBF9?style=flat-square&logo=LaTeX&logoColor=3D382F) |
 | Data Visualization & Dashboarding | ![Streamlit](https://img.shields.io/badge/Streamlit-FBFBF9?style=flat-square&logo=Streamlit&logoColor=3D382F) |
 | Web Automation & Crawling | ![Selenium](https://img.shields.io/badge/Selenium-FBFBF9?style=flat-square&logo=Selenium&logoColor=3D382F) |
-| Package Management & Environment | ![Anaconda](https://img.shields.io/badge/Anaconda-FBFBF9?style=flat-square&logo=Anaconda&logoColor=3D382F) |
 | Version Control | ![GitHub](https://img.shields.io/badge/GitHub-FBFBF9?style=flat-square&logo=GitHub&logoColor=3D382F) |
 | Project Management | ![Slack](https://img.shields.io/badge/Slack-FBFBF9?style=flat-square&logo=Slack&logoColor=3D382F) ![Notion](https://img.shields.io/badge/Notion-FBFBF9?style=flat-square&logo=Notion&logoColor=3D382F) ![Google Drive](https://img.shields.io/badge/GoogleDrive-FBFBF9?style=flat-square&logo=googledrive&logoColor=3D382F) |
 
@@ -36,7 +35,6 @@ Welcome to my Blog :)
 | Data Reporting & Documentation | ![Markdown](https://img.shields.io/badge/Markdown-DBC4B0?style=flat-square&logo=Markdown&logoColor=3D382F) ![LaTeX](https://img.shields.io/badge/LaTeX-DBC4B0?style=flat-square&logo=LaTeX&logoColor=3D382F) |
 | Data Visualization & Dashboarding | ![Streamlit](https://img.shields.io/badge/Streamlit-DBC4B0?style=flat-square&logo=Streamlit&logoColor=3D382F) |
 | Web Automation & Crawling | ![Selenium](https://img.shields.io/badge/Selenium-DBC4B0?style=flat-square&logo=Selenium&logoColor=3D382F) |
-| Package Management & Environment | ![Anaconda](https://img.shields.io/badge/Anaconda-DBC4B0?style=flat-square&logo=Anaconda&logoColor=3D382F) |
 | Version Control | ![GitHub](https://img.shields.io/badge/GitHub-DBC4B0?style=flat-square&logo=GitHub&logoColor=3D382F) |
 | Project Management | ![Slack](https://img.shields.io/badge/Slack-DBC4B0?style=flat-square&logo=Slack&logoColor=3D382F) ![Notion](https://img.shields.io/badge/Notion-DBC4B0?style=flat-square&logo=Notion&logoColor=3D382F) ![Google Drive](https://img.shields.io/badge/GoogleDrive-DBC4B0?style=flat-square&logo=googledrive&logoColor=3D382F) |
 
@@ -55,6 +53,5 @@ Welcome to my Blog :)
 | Data Reporting & Documentation | ![Markdown](https://img.shields.io/badge/Markdown-EDE2D8?style=flat-square&logo=Markdown&logoColor=3D382F) ![LaTeX](https://img.shields.io/badge/LaTeX-EDE2D8?style=flat-square&logo=LaTeX&logoColor=3D382F) |
 | Data Visualization & Dashboarding | ![Streamlit](https://img.shields.io/badge/Streamlit-EDE2D8?style=flat-square&logo=Streamlit&logoColor=3D382F) |
 | Web Automation & Crawling | ![Selenium](https://img.shields.io/badge/Selenium-EDE2D8?style=flat-square&logo=Selenium&logoColor=3D382F) |
-| Package Management & Environment | ![Anaconda](https://img.shields.io/badge/Anaconda-EDE2D8?style=flat-square&logo=Anaconda&logoColor=3D382F) |
 | Version Control | ![GitHub](https://img.shields.io/badge/GitHub-EDE2D8?style=flat-square&logo=GitHub&logoColor=3D382F) |
 | Project Management | ![Slack](https://img.shields.io/badge/Slack-EDE2D8?style=flat-square&logo=Slack&logoColor=3D382F) ![Notion](https://img.shields.io/badge/Notion-EDE2D8?style=flat-square&logo=Notion&logoColor=3D382F) ![Google Drive](https://img.shields.io/badge/GoogleDrive-EDE2D8?style=flat-square&logo=googledrive&logoColor=3D382F) |
