@@ -9,7 +9,7 @@ Welcome to my Blog :)
 | Category | Technologies |
 |----------|--------------|
 | Programming Languages | ![Python](https://img.shields.io/badge/Python-FBFBF9?style=flat-square&logo=Python&logoColor=3D382F) |
-| SQL | ![MySQL](https://img.shields.io/badge/MySQL-FBFBF9?style=flat-square&logo=MySQL&logoColor=3D382F) ![SQLite](https://img.shields.io/badge/SQLite-FBFBF9?style=flat-square&logo=SQLite&logoColor=3D382F) ![SQLAlchemy](https://img.shields.io/badge/SQLAlchemy-FBFBF9?style=flat-square&logo=SQLAlchemy&logoColor=3D382F) |
+| SQL | ![MySQL](https://img.shields.io/badge/MySQL-FBFBF9?style=flat-square&logo=MySQL&logoColor=3D382F) ![SQLite](https://img.shields.io/badge/SQLite-FBFBF9?style=flat-square&logo=SQLite&logoColor=3D382F) |
 | Machine Learning & Deep Learning | ![TensorFlow](https://img.shields.io/badge/TensorFlow-FBFBF9?style=flat-square&logo=TensorFlow&logoColor=3D382F) ![scikit--learn](https://img.shields.io/badge/scikit--learn-FBFBF9?style=flat-square&logo=scikit-learn&logoColor=3D382F) ![PyTorch](https://img.shields.io/badge/PyTorch-FBFBF9?style=flat-square&logo=PyTorch&logoColor=3D382F) ![Keras](https://img.shields.io/badge/Keras-FBFBF9?style=flat-square&logo=Keras&logoColor=3D382F) |
 | LLM Framework | ![Langchain](https://img.shields.io/badge/Langchain-FBFBF9?style=flat-square&logo=Langchain&logoColor=3D382F) |
 | Model Hub & NLP Tools | ![Huggingface](https://img.shields.io/badge/Huggingface-FBFBF9?style=flat-square&logo=Huggingface&logoColor=3D382F) |
@@ -27,7 +27,7 @@ Welcome to my Blog :)
 | Category | Technologies |
 |----------|--------------|
 | Programming Languages | ![Python](https://img.shields.io/badge/Python-DBC4B0?style=flat-square&logo=Python&logoColor=3D382F) |
-| SQL | ![MySQL](https://img.shields.io/badge/MySQL-DBC4B0?style=flat-square&logo=MySQL&logoColor=3D382F) ![SQLite](https://img.shields.io/badge/SQLite-DBC4B0?style=flat-square&logo=SQLite&logoColor=3D382F) ![SQLAlchemy](https://img.shields.io/badge/SQLAlchemy-DBC4B0?style=flat-square&logo=SQLAlchemy&logoColor=3D382F) |
+| SQL | ![MySQL](https://img.shields.io/badge/MySQL-DBC4B0?style=flat-square&logo=MySQL&logoColor=3D382F) ![SQLite](https://img.shields.io/badge/SQLite-DBC4B0?style=flat-square&logo=SQLite&logoColor=3D382F) |
 | Machine Learning & Deep Learning | ![TensorFlow](https://img.shields.io/badge/TensorFlow-DBC4B0?style=flat-square&logo=TensorFlow&logoColor=3D382F) ![scikit--learn](https://img.shields.io/badge/scikit--learn-DBC4B0?style=flat-square&logo=scikit-learn&logoColor=3D382F) ![PyTorch](https://img.shields.io/badge/PyTorch-DBC4B0?style=flat-square&logo=PyTorch&logoColor=3D382F) ![Keras](https://img.shields.io/badge/Keras-DBC4B0?style=flat-square&logo=Keras&logoColor=3D382F) |
 | LLM Framework | ![Langchain](https://img.shields.io/badge/Langchain-DBC4B0?style=flat-square&logo=Langchain&logoColor=3D382F) |
 | Model Hub & NLP Tools | ![Huggingface](https://img.shields.io/badge/Huggingface-DBC4B0?style=flat-square&logo=Huggingface&logoColor=3D382F) |
@@ -46,7 +46,7 @@ Welcome to my Blog :)
 | Category | Technologies |
 |----------|--------------|
 | Programming Languages | ![Python](https://img.shields.io/badge/Python-EDE2D8?style=flat-square&logo=Python&logoColor=3D382F) |
-| SQL | ![MySQL](https://img.shields.io/badge/MySQL-EDE2D8?style=flat-square&logo=MySQL&logoColor=3D382F) ![SQLite](https://img.shields.io/badge/SQLite-EDE2D8?style=flat-square&logo=SQLite&logoColor=3D382F) ![SQLAlchemy](https://img.shields.io/badge/SQLAlchemy-EDE2D8?style=flat-square&logo=SQLAlchemy&logoColor=3D382F) |
+| SQL | ![MySQL](https://img.shields.io/badge/MySQL-EDE2D8?style=flat-square&logo=MySQL&logoColor=3D382F) ![SQLite](https://img.shields.io/badge/SQLite-EDE2D8?style=flat-square&logo=SQLite&logoColor=3D382F) |
 | Machine Learning & Deep Learning | ![TensorFlow](https://img.shields.io/badge/TensorFlow-EDE2D8?style=flat-square&logo=TensorFlow&logoColor=3D382F) ![scikit--learn](https://img.shields.io/badge/scikit--learn-EDE2D8?style=flat-square&logo=scikit-learn&logoColor=3D382F) ![PyTorch](https://img.shields.io/badge/PyTorch-EDE2D8?style=flat-square&logo=PyTorch&logoColor=3D382F) ![Keras](https://img.shields.io/badge/Keras-EDE2D8?style=flat-square&logo=Keras&logoColor=3D382F) |
 | LLM Framework | ![Langchain](https://img.shields.io/badge/Langchain-EDE2D8?style=flat-square&logo=Langchain&logoColor=3D382F) |
 | Model Hub & NLP Tools | ![Huggingface](https://img.shields.io/badge/Huggingface-EDE2D8?style=flat-square&logo=Huggingface&logoColor=3D382F) |
