@@ -1,0 +1,38 @@
+<header>
+  <div class="blog-title">
+    <h1>{{ site.title }}</h1>
+    {% if site.description %}
+      <p>{{ site.description }}</p>
+    {% endif %}
+  </div>
+  
+  <nav>
+    <ul>
+      {% for item in site.navigation %}
+        <li><a href="{{ site.baseurl }}{{ item.url }}">{{ item.title }}</a></li>
+      {% endfor %}
+    </ul>
+  </nav>
+
+  <div class="search-container">
+    <input type="text" id="search-input" placeholder="검색어를 입력하세요">
+    <div id="search-results"></div>
+  </div>
+
+  {% if page.url contains '/posts/' or page.url contains '/achievements/' %}
+    <div class="categories">
+      <h2>{% if page.url contains '/posts/' %}Blog{% else %}Achievement{% endif %} Categories:</h2>
+      <select id="{% if page.url contains '/posts/' %}category-select{% else %}achievement-category-select{% endif %}" onchange="{% if page.url contains '/posts/' %}filterCategories(){% else %}filterAchievements(){% endif %}">
+        <option value="all">All Categories</option>
+        {% if page.url contains '/posts/' %}
+          {% assign categories = site.category_structure %}
+        {% elsif page.url contains '/achievements/' %}
+          {% assign categories = site.achievement_categories %}
+        {% endif %}
+        {% for category in categories %}
+          <option value="{{ category[0] }}">{{ category[1].title }}</option>
+        {% endfor %}
+      </select>
+    </div>
+  {% endif %}
+</header>

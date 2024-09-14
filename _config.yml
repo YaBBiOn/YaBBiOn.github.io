@@ -1,0 +1,96 @@
+# Site settings
+# 블로그 제목을 여기에서 수정하세요
+title: {블로그 제목}
+# 블로그 설명을 여기에서 수정하세요
+description: {강서구 흑염룡 블로그 설명}  
+# 블로그 URL을 수정하세요
+url: "{블로그 URL}"
+github_username: allenkang92
+# 블로그 저자 이름을 수정하세요
+author: {저자 이름}
+# 블로그 이메일 주소를 수정하세요
+email: {이메일 주소}
+
+# Build settings
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-lunr-js-search
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+
+# Navigation menu
+navigation:
+# 블로그 제목을 여기에서 수정하세요
+  - title: Home
+# 블로그 URL을 수정하세요
+    url: /
+# 블로그 제목을 여기에서 수정하세요
+  - title: Posts
+# 블로그 URL을 수정하세요
+    url: /posts.html
+# 블로그 제목을 여기에서 수정하세요
+  - title: Achievements
+# 블로그 URL을 수정하세요
+    url: /achievements.html
+# 블로그 제목을 여기에서 수정하세요
+  - title: Tools
+# 블로그 URL을 수정하세요
+    url: /tools.html
+# 블로그 제목을 여기에서 수정하세요
+  - title: About
+# 블로그 URL을 수정하세요
+    url: /about.html
+
+# Collections
+collections:
+  categories:
+    output: true
+    permalink: /categories/:name/
+  tools:
+    output: true
+  series:
+    output: true
+    permalink: /series/:name/
+  achievements:
+    output: true
+    permalink: /achievements/:name/
+
+# Category structure for the blog
+category_structure:
+  programming:
+# 블로그 제목을 여기에서 수정하세요
+    title: Programming
+    subcategories:
+      - python
+      - java
+      - web-automation
+  data_science:
+# 블로그 제목을 여기에서 수정하세요
+    title: Data Science
+    subcategories:
+      - data_analysis
+      - machine_learning
+      - deep_learning
+      - data_visualization
+  devops_&_cloud:
+
+
+
+# _config.yml 파일의 마지막에 추가
+defaults:
+  - scope:
+      path: "_data/achievement_categories.yml"
+    values:
+      layout: achievement

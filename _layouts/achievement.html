@@ -1,0 +1,79 @@
+---
+layout: default
+---
+
+<div class="achievement-page">
+  <h1>{{ page.title }}</h1>
+
+  {% if page.description %}
+    <p>{{ page.description }}</p>
+  {% endif %}
+
+  {{ content }}
+
+  <!-- 성취 항목 리스트 출력 -->
+  {% assign achievement_items = site.achievements | where: "category", page.slug %}
+  {% if achievement_items.size > 0 %}
+    <h2>Achievements in this category</h2>
+    <ul class="achievement-list">
+      {% for achievement in achievement_items %}
+        <li class="achievement-category" data-category="{{ achievement.category }}">
+          <h3><a href="{{ achievement.url | relative_url }}">{{ achievement.title }}</a></h3>
+          {% if achievement.description %}
+            <p>{{ achievement.description }}</p>
+          {% endif %}
+        </li>
+      {% endfor %}
+    </ul>    
+  {% else %}
+    <p>No achievements in this category yet.</p>
+  {% endif %}
+
+  <!-- 서브카테고리 리스트 출력 -->
+  {% assign current_category = site.data.achievement_categories[page.slug] %}
+  {% if current_category and current_category.subcategories %}
+    <h2>Subcategories</h2>
+    <ul class="subcategory-list">
+      {% for subcategory in current_category.subcategories %}
+        <li>
+          <a href="{{ site.baseurl }}/achievements/{{ page.slug }}/{{ subcategory | slugify }}/">
+            {{ subcategory | replace: '_', ' ' | capitalize }}
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+
+  <!-- 카테고리 필터링 드롭다운 추가 -->
+  <h2>Filter by category</h2>
+  <select id="achievement-category-select">
+    <option value="all">All Categories</option>
+    {% for category in site.data.achievement_categories %}
+      <option value="{{ category[0] }}">{{ category[1].title }}</option>
+    {% endfor %}
+  </select>
+
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    var achievementCategorySelect = document.getElementById('achievement-category-select');
+
+    if (achievementCategorySelect) {
+      achievementCategorySelect.addEventListener('change', filterAchievements);
+    }
+
+    function filterAchievements() {
+      var selectedCategory = achievementCategorySelect.value;
+      var achievementItems = document.getElementsByClassName('achievement-category');
+
+      for (var i = 0; i < achievementItems.length; i++) {
+        if (selectedCategory === 'all' || achievementItems[i].getAttribute('data-category') === selectedCategory) {
+          achievementItems[i].style.display = 'block';
+        } else {
+          achievementItems[i].style.display = 'none';
+        }
+      }
+    }
+  });
+</script>

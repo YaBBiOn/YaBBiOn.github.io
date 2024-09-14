@@ -1,0 +1,50 @@
+---
+layout: default
+title: Blog Posts
+---
+<div class="posts">
+  <h1>Blog Posts</h1>
+
+  <div class="category-filter">
+    <label for="category-select">Filter by category:</label>
+    <select id="category-select">
+      <option value="all">All Categories</option>
+      {% for category in site.category_structure %}
+        <option value="{{ category[0] }}">{{ category[1].title }}</option>
+      {% endfor %}
+    </select>
+  </div>
+
+  {% for post in site.posts %}
+    <article class="post-preview" data-category="{{ post.categories | first }}">
+      <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+      <div class="post-meta">
+        <span class="post-date">{{ post.date | date: "%B %d, %Y" }}</span>
+        <span class="post-category">Category: {{ post.categories | first }}</span>
+      </div>
+      <div class="post-excerpt">
+        {{ post.excerpt | strip_html | truncatewords: 50 }}
+      </div>
+    </article>
+  {% endfor %}
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    var categorySelect = document.getElementById('category-select');
+    if (categorySelect) {
+      categorySelect.addEventListener('change', function() {
+        var selectedCategory = this.value;
+        var posts = document.getElementsByClassName('post-preview');
+        
+        for (var i = 0; i < posts.length; i++) {
+          if (selectedCategory === 'all' || posts[i].getAttribute('data-category') === selectedCategory) {
+            posts[i].style.display = 'block';
+          } else {
+            posts[i].style.display = 'none';
+          }
+        }
+      });
+    }
+  });
+</script>

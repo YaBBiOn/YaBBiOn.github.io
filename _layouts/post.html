@@ -1,0 +1,70 @@
+---
+layout: default
+---
+<article class="post">
+  <h1>{{ page.title }}</h1>
+  
+  <div class="post-categories">
+    카테고리:
+    {% for category in page.categories %}
+    <span class="category">{{ category }}</span>
+    {% unless forloop.last %}&nbsp;{% endunless %}
+    {% endfor %}
+  </div>
+
+  <div class="post-date">
+    작성일: {{ page.date | date: "%Y-%m-%d" }}
+  </div>
+
+  <div class="post-content">
+    {{ content }}
+  </div>
+
+  {% if page.series %}
+    {% assign series_posts = site.posts | where: "series", page.series | sort: "date" %}
+    <div class="series-navigation">
+      <h3>{{ page.series }} 시리즈:</h3>
+      <ol>
+      {% for post in series_posts %}
+        <li>
+          {% if post.url == page.url %}
+            {{ post.title }} (현재 글)
+          {% else %}
+            <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+          {% endif %}
+        </li>
+      {% endfor %}
+      </ol>
+    </div>
+  {% endif %}
+
+  <div class="related-posts">
+    <h3>관련 포스트:</h3>
+    <ul>
+    {% assign maxRelated = 4 %}
+    {% assign relatedCounter = 0 %}
+
+    {% for post in site.posts %}
+      {% if post.url != page.url %}
+        {% if post.categories == page.categories %}
+          <li><a href="{{ post.url | relative_url }}">{{ post.title }}</a></li>
+          {% assign relatedCounter = relatedCounter | plus: 1 %}
+          {% if relatedCounter >= maxRelated %}
+            {% break %}
+          {% endif %}
+        {% endif %}
+      {% endif %}
+    {% endfor %}
+    </ul>
+  </div>
+
+  <div id="comments">
+    <script src="https://utteranc.es/client.js"
+            repo="allenkang92/allenkang92.github.io"
+            issue-term="pathname"
+            theme="boxy-light"
+            crossorigin="anonymous"
+            async>
+    </script>
+  </div>
+</article>

@@ -1,0 +1,19 @@
+---
+layout: default
+title: 시리즈 목록
+---
+
+<h1>시리즈 목록</h1>
+
+{% assign series_posts = site.posts | where_exp: "post", "post.series != nil" %}
+{% assign unique_series = series_posts | map: "series" | uniq | sort %}
+
+{% for series in unique_series %}
+  <h2>{{ series }}</h2>
+  <ul>
+    {% assign series_posts = site.posts | where: "series", series | sort: "date" %}
+    {% for post in series_posts %}
+      <li><a href="{{ post.url | relative_url }}">{{ post.title }}</a></li>
+    {% endfor %}
+  </ul>
+{% endfor %}

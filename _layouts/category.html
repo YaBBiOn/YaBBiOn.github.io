@@ -1,0 +1,43 @@
+---
+layout: default
+---
+
+<div class="category-page">
+  <h1>{{ page.title }}</h1>
+
+  {% if page.description %}
+    <p class="category-description">{{ page.description }}</p>
+  {% endif %}
+
+  {{ content }}
+
+  {% assign category_posts = site.posts | where: "categories", page.slug %}
+  {% if category_posts.size > 0 %}
+    <h2>Posts in this category</h2>
+    <ul class="post-list">
+      {% for post in category_posts %}
+        <li>
+          <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+          <p class="post-meta">{{ post.date | date: "%B %-d, %Y" }}</p>
+          {% if post.description %}
+            <p class="post-excerpt">{{ post.description }}</p>
+          {% endif %}
+        </li>
+      {% endfor %}
+    </ul>
+  {% else %}
+    <p>No posts in this category yet.</p>
+  {% endif %}
+
+  {% assign subcategories = site.category_structure[page.slug].subcategories %}
+  {% if subcategories.size > 0 %}
+    <h2>Subcategories</h2>
+    <ul class="subcategory-list">
+      {% for subcategory in subcategories %}
+        <li>
+          <a href="{{ site.baseurl }}/categories/{{ subcategory | slugify }}/">{{ subcategory | replace: '_', ' ' | capitalize }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+</div>

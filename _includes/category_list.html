@@ -1,0 +1,21 @@
+<div class="category-list">
+    <h2>Categories</h2>
+    <ul>
+      {% for category in site.category_structure %}
+        <li>
+          <a href="{{ site.baseurl }}/categories/{{ category[0] }}/">{{ category[1].title }}</a>
+          {% if category[1].subcategories.size > 0 %}
+            <ul>
+              {% for subcategory in category[1].subcategories %}
+                <li>
+                  <a href="{{ site.baseurl }}/categories/{{ category[0] }}/{{ subcategory | slugify }}/">
+                    {{ subcategory | capitalize | replace: '_', ' ' }}
+                  </a>
+                </li>
+              {% endfor %}
+            </ul>
+          {% endif %}
+        </li>
+      {% endfor %}
+    </ul>
+  </div>

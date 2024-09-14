@@ -1,0 +1,26 @@
+---
+layout: default
+title: Home
+---
+
+<div class="home">
+  <h1>Welcome to {}'s Blog</h1>
+  
+  <section class="profile">
+    <img src="/assets/images/{logo}.png" alt="{}'s profile picture" class="profile-pic">
+    <p>"Striving for a better tomorrow, together with you."</p>
+  </section>
+
+  <section class="recent-posts">
+    <h2>Recent Posts</h2>
+    <ul>
+      {% for post in site.posts limit:7 %}
+        <li>
+          <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+          <small>{{ post.date | date: "%B %d, %Y" }}</small>
+          <p>{{ post.excerpt | strip_html | truncatewords: 50 }}</p>
+        </li>
+      {% endfor %}
+    </ul>
+  </section>
+</div>

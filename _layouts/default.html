@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    {% include head.html %}
+    <title>{{ page.title }} - Allen's Blog</title>
+    <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+
+    <!-- Favicon 링크 추가 -->
+    <link rel="icon" href="{{ '/favicon.ico' | relative_url }}" type="image/x-icon">
+    <link rel="shortcut icon" href="{{ '/favicon.ico' | relative_url }}" type="image/x-icon">
+</head>
+<body>
+    <!-- 헤더 포함 -->
+    {% include header.html %}
+    
+    <!-- 페이지 콘텐츠 -->
+    <main>
+        {{ content }}
+    </main>
+
+    <!-- 푸터 포함 -->
+    {% include footer.html %}
+    
+    <!-- 검색 및 필터링 스크립트 -->
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // 포스트 카테고리 필터링
+      var categorySelect = document.getElementById('category-select');
+      // 어치브먼트 카테고리 필터링
+      var achievementCategorySelect = document.getElementById('achievement-category-select');
+
+      if (categorySelect) {
+        categorySelect.addEventListener('change', filterCategories);
+      }
+
+      if (achievementCategorySelect) {
+        achievementCategorySelect.addEventListener('change', filterAchievements);
+      }
+    });
+
+    // 포스트 카테고리 필터링 함수
+    function filterCategories() {
+      var select = document.getElementById('category-select');
+      var selectedCategory = select.value;
+      var posts = document.getElementsByClassName('post-preview');
+      
+      for (var i = 0; i < posts.length; i++) {
+        if (selectedCategory === 'all' || posts[i].getAttribute('data-category') === selectedCategory) {
+          posts[i].style.display = 'block';
+        } else {
+          posts[i].style.display = 'none';
+        }
+      }
+    }
+
+    // 어치브먼트 카테고리 필터링 함수
+    function filterAchievements() {
+      var select = document.getElementById('achievement-category-select');
+      var selectedCategory = select.value;
+      var categories = document.getElementsByClassName('achievement-category');
+
+      for (var i = 0; i < categories.length; i++) {
+        if (selectedCategory === 'all' || categories[i].getAttribute('data-category') === selectedCategory) {
+          categories[i].style.display = 'block';
+        } else {
+          categories[i].style.display = 'none';
+        }
+      }
+    }
+
+
+    </script>
+
+    <!-- 검색 스크립트 -->
+    <script src="{{ '/assets/js/search.js' | relative_url }}"></script>
+</body>
+</html>
