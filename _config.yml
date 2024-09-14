@@ -1,15 +1,15 @@
 # Site settings
 # 블로그 제목을 여기에서 수정하세요
-title: {블로그 제목}
+title: YaBBi's Blog
 # 블로그 설명을 여기에서 수정하세요
 description: {강서구 흑염룡 블로그 설명}  
 # 블로그 URL을 수정하세요
-url: "{블로그 URL}"
-github_username: allenkang92
+url: "https://YaBBiOn.github.io"
+github_username: YaBBiOn
 # 블로그 저자 이름을 수정하세요
-author: {저자 이름}
+author: YaBBiOn93
 # 블로그 이메일 주소를 수정하세요
-email: {이메일 주소}
+email: yabbion93@gmail.com
 
 # Build settings
 markdown: kramdown
