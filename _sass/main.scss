@@ -1,3 +1,17 @@
+/* 기본 스타일 초기화래 */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing:border-box;
+}
+
+.container {
+  display: flex;
+  height: 100vh
+}
+/* 뭔 문제가 있으면 여기도 파버려 */
+
 body {
   font-family: 'Noto Sans KR', sans-serif;
   line-height: 1.6;
@@ -13,18 +27,43 @@ header {
   margin-bottom: 20px;
 }
 
+/* h1부분 때문에 여기 고침 */
 h1, h2, h3 {
-  color: #2c3e50;
+    color: #2c3e50;
+    margin-bottom : 20px;
 }
 
 a {
-  color: #3498db;
-  text-decoration: none;
+    color: #ad8370;
+    text-decoration: none;
 }
 
 a:hover {
   text-decoration: underline;
 }
+
+/* sidebar추가함. 밑에 sidebar는 다 추가된애들. 근데 뭔지는 모름 */
+.sidebar{
+  width: 20%;
+  background-color:  #dbc4b0;
+  padding: 20px;
+
+}
+
+.sidebar ul {
+  list-style-type: none;
+}
+
+.sidebar ul li {
+  margin-bottom: 10px;
+}
+
+.sidebar ul li a {
+  text-decoration: none;
+  color: #333;
+}
+/* 파야하는 일이 있다면 위에서부터 여기까지 싹 파야 함. */
+
 
 .post-list {
   list-style-type: none;
