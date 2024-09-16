@@ -7,7 +7,7 @@
 }
 
 .container {
-    display: flex;
+    display: 80%;
     height: 100vh
 }
 /* 뭔 문제가 있으면 여기도 파버려 */
