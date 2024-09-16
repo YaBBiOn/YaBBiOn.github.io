@@ -54,7 +54,9 @@ a:hover {
 
 /* sidebar추가함. 밑에 sidebar는 다 추가된애들. 근데 뭔지는 모름 */
 .sidebar {
-	position: fixed;
+	position: sticky;
+    left: 0;
+    width: 20%;
 	top: 0px;
 	padding-top: 10%;
 	background-color: #ad8370;
