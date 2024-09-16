@@ -53,25 +53,28 @@ a:hover {
 }
 
 /* sidebar추가함. 밑에 sidebar는 다 추가된애들. 근데 뭔지는 모름 */
-.sidebar{
-    width: 20%;
-    background-color:  #dbc4b0;
-    padding: 20px;
-
+.sidebar {
+	position: fixed;
+	top: 0px;
+	padding-top: 10%;
+	background-color: #ad8370;
+	color: #fff;
 }
 
-.sidebar ul {
-    list-style-type: none;
+.sidebar-header {
+	text-align: center;
+	margin-bottom: 10px;
+}
+.sidebar-header .title{
+	letter-spacing: 3px;
+	text-transform: #fbfbf9;
 }
 
-.sidebar ul li {
-    margin-bottom: 10px;
+.sidebar-header .title a{
+	text-decoration: none;
+	color: #fbfbf9;
 }
 
-.sidebar ul li a {
-    text-decoration: none;
-    color: #333;
-}
 /* 파야하는 일이 있다면 위에서부터 여기까지 싹 파야 함. */
 
 footer {
