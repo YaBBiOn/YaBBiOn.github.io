@@ -1,38 +1,38 @@
-/* 기본 스타일 초기화래 */
-
+/* 기본 스타일 초기화 */
 * {
     margin: 0;
     padding: 0;
-    box-sizing:border-box;
+    box-sizing: border-box;
 }
 
 .container {
     display: flex;
-    height: 100vh
+    height: 100vh;
 }
-/* 뭔 문제가 있으면 여기도 파버려 */
 
+/* 전체 body 스타일 */
 body {
     font-family: 'Noto Sans KR', sans-serif;
     line-height: 1.6;
     color: #3d382f;
-    max-width: 800px;
-    margin: 0 auto;
+    margin: 0;
     padding: 20px;
 }
 
+/* header 스타일 */
 header {
     background-color: #dbc4b0;
     padding: 20px;
     margin-bottom: 20px;
 }
 
-/* h1부분 때문에 여기 고침 */
+/* h1, h2, h3 스타일 */
 h1, h2, h3 {
     color: #3d382f;
-    margin-bottom : 20px;
+    margin-bottom: 20px;
 }
 
+/* 링크 스타일 */
 a {
     color: #ad8370;
     text-decoration: none;
@@ -42,42 +42,54 @@ a:hover {
     text-decoration: underline;
 }
 
+/* 포스트 리스트 스타일 */
 .post-list {
     list-style-type: none;
     padding: 0;
 }
 
+/* 포스트 메타 스타일 */
 .post-meta {
     color: #777;
     font-size: 0.9em;
 }
 
-/* sidebar추가함. 밑에 sidebar는 다 추가된애들. 근데 뭔지는 모름 */
+/* 사이드바 스타일 */
 .sidebar {
-	position: fixed;
-	top: 0px;
-	padding-top: 10%;
-	background-color: #ad8370;
-	color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px; /* 사이드바 너비 설정 */
+    height: 100vh; /* 화면 전체 높이 */
+    padding-top: 10%;
+    background-color: #ad8370;
+    color: #fff;
+    z-index: 100; /* 사이드바가 메인 콘텐츠 위에 오지 않게 설정 */
 }
 
 .sidebar-header {
     background-color: #ad8370;
-	text-align: center;
-	margin-bottom: 10px;
-}
-.sidebar-header .title{
-	letter-spacing: 3px;
-	text-transform: #ad8370;
+    text-align: center;
+    margin-bottom: 10px;
 }
 
-.sidebar-header .title a{
-	text-decoration: none;
-	color: #fbfbf9;
+.sidebar-header .title {
+    letter-spacing: 3px;
+    text-transform: uppercase;
 }
 
-/* 파야하는 일이 있다면 위에서부터 여기까지 싹 파야 함. */
+.sidebar-header .title a {
+    text-decoration: none;
+    color: #fbfbf9;
+}
 
+/* 메인 콘텐츠를 사이드바 너비만큼 오른쪽으로 이동 */
+.main-content {
+    margin-left: 250px; /* 사이드바 너비만큼 오른쪽으로 */
+    padding: 20px;
+}
+
+/* footer 스타일 */
 footer {
     margin-top: 40px;
     padding-top: 20px;
@@ -86,6 +98,7 @@ footer {
     font-size: 0.9em;
 }
 
+/* 검색창 스타일 */
 .search-container {
   position: relative;
   margin-top: 10px;
@@ -117,5 +130,3 @@ footer {
   z-index: 1000;
   width: 100%; /* 결과 창 너비 조정 */
 }
-
-/* 나머지 스타일은 그대로 유지 */
