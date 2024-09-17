@@ -22,7 +22,7 @@ body {
 }
 
 header {
-    background-color: #ad8370;
+    background-color: #dbc4b0;
     padding: 20px;
     margin-bottom: 20px;
 }
@@ -34,7 +34,7 @@ h1, h2, h3 {
 }
 
 a {
-    color: #dbc4b0;
+    color: #ad8370;
     text-decoration: none;
 }
 
@@ -62,6 +62,7 @@ a:hover {
 }
 
 .sidebar-header {
+    background-color: #ad8370;
 	text-align: center;
 	margin-bottom: 10px;
 }
