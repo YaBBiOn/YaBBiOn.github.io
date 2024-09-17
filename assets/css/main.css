@@ -24,6 +24,7 @@ header {
     background-color: #dbc4b0;
     padding: 20px;
     margin-bottom: 20px;
+    width: 100%; /* header가 전체 화면 너비 차지 */
 }
 
 /* h1, h2, h3 스타일 */
@@ -64,6 +65,7 @@ a:hover {
     padding-top: 10%;
     background-color: #ad8370;
     color: #fff;
+    position: sticky; /* 스크롤할 때 고정 */
     overflow: hidden; /* 이미지나 내용이 사이드바를 넘지 않도록 설정 */
     z-index: 100;
 }
@@ -93,7 +95,7 @@ a:hover {
 
 /* 메인 콘텐츠 스타일 */
 .main-content {
-    margin-left: 250px; /* 사이드바 너비만큼 여백 */
+    flex-grow: 1; /* 남은 공간을 모두 차지하도록 설정 */
     padding: 20px;
     max-width: calc(100% - 250px); /* 사이드바를 제외한 나머지 부분을 메인 콘텐츠에 할당 */
 }
@@ -105,6 +107,7 @@ footer {
     border-top: 1px solid #eee;
     text-align: center;
     font-size: 0.9em;
+    width: 100%; /* footer가 전체 화면 너비 차지 */
 }
 
 /* 검색창 스타일 */
