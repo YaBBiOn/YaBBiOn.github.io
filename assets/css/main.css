@@ -64,7 +64,15 @@ a:hover {
     padding-top: 10%;
     background-color: #ad8370;
     color: #fff;
-    z-index: 100; /* 사이드바가 메인 콘텐츠 위에 오지 않게 설정 */
+    overflow: hidden; /* 이미지나 내용이 사이드바를 넘지 않도록 설정 */
+    z-index: 100;
+}
+
+/* 사이드바 내 이미지 스타일 */
+.sidebar img {
+    width: 100%; /* 이미지가 사이드바의 너비에 맞게 조정 */
+    height: auto;
+    padding: 0; /* 패딩 제거 */
 }
 
 .sidebar-header {
@@ -83,10 +91,11 @@ a:hover {
     color: #fbfbf9;
 }
 
-/* 메인 콘텐츠를 사이드바 너비만큼 오른쪽으로 이동 */
+/* 메인 콘텐츠 스타일 */
 .main-content {
-    margin-left: 250px; /* 사이드바 너비만큼 오른쪽으로 */
+    margin-left: 250px; /* 사이드바 너비만큼 여백 */
     padding: 20px;
+    max-width: calc(100% - 250px); /* 사이드바를 제외한 나머지 부분을 메인 콘텐츠에 할당 */
 }
 
 /* footer 스타일 */
