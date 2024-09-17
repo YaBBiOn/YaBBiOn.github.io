@@ -57,7 +57,7 @@ a:hover {
 	position: fixed;
 	top: 0px;
 	padding-top: 10%;
-	background-color: #ad8370;
+	background-color: #2c3e50;
 	color: #fff;
 }
 
@@ -67,12 +67,12 @@ a:hover {
 }
 .sidebar-header .title{
 	letter-spacing: 3px;
-	text-transform: #ad8370;
+	text-transform: uppercase;
 }
 
 .sidebar-header .title a{
 	text-decoration: none;
-	color: #fbfbf9;
+	color: #fff;
 }
 
 /* 파야하는 일이 있다면 위에서부터 여기까지 싹 파야 함. */
