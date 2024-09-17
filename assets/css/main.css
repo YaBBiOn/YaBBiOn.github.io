@@ -15,26 +15,26 @@
 body {
     font-family: 'Noto Sans KR', sans-serif;
     line-height: 1.6;
-    color: #333;
+    color: #3d382f;
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
 }
 
 header {
-    background-color: #f4f4f4;
+    background-color: #ad8370;
     padding: 20px;
     margin-bottom: 20px;
 }
 
 /* h1부분 때문에 여기 고침 */
 h1, h2, h3 {
-    color: #2c3e50;
+    color: #3d382f;
     margin-bottom : 20px;
 }
 
 a {
-    color: #ad8370;
+    color: #dbc4b0;
     text-decoration: none;
 }
 
