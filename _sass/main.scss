@@ -19,7 +19,7 @@ body {
   display: flex;
 }
 
-/* 사이드바 스타일 */
+/* 사이드바 overflow 속성 수정 */
 .sidebar {
   position: fixed;
   top: 0;
@@ -29,9 +29,24 @@ body {
   padding-top: 10%;
   background-color: #ad8370;
   color: #fff;
-  overflow: hidden;
+  /* overflow: hidden; */ /* 제거 또는 주석 처리 */
   z-index: 100;
 }
+
+/* 사이드바 헤더 스타일 추가 */
+.sidebar-header {
+  text-align: center;
+  padding: 20px;
+}
+
+/* 이미지 크기 및 정렬 설정 */
+.sidebar-header img {
+  width: 80%; /* 필요에 따라 크기 조절 */
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
 
 /* 네비게이션 바 스타일 */
 nav {
